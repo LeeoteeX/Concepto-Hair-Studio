@@ -1,0 +1,74 @@
+.banner{
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    overflow: hidden;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-180%,-140%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.contenido-banner img{
+    width: 350px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 21px 21px 21px 21px;
+    -moz-border-radius: 21px 21px 21px 21px;
+    -webkit-border-radius: 21px 21px 21px 21px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 17px 29px 50px 4px rgba(0,0,0,1);
+    -moz-box-shadow: 17px 29px 50px 4px rgba(0,0,0,1);
+    box-shadow: 17px 29px 50px 4px rgba(0,0,0,1);
+}
+
+.nav-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Añade el color de fondo que deseas */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.ul-index {
+    list-style-type: none;
+    display: flex;
+}
+
+.li-index {
+    margin: 20px 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.li-index a {
+    text-decoration: none;
+    color: white;
+    padding: 0 40px;
+}
+
+  
+  /* Estilo para el contenido debajo de la barra de navegación */
+  main {
+    margin-top: 60px; /* Ajusta según el tamaño de la barra de navegación */
+  }
+
+h1{
+    font-family: "FormalEventJNL";
+    font-size: 40px;
+}
