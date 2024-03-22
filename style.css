@@ -81,9 +81,7 @@
     -moz-border-radius: 21px;
     -webkit-border-radius: 21px;
     border: 0px solid #000000;
-    transition: all 0.5s ease; /* Transición suave de 0.5 segundos */
-
-    
+    transition: all 0.5s ease; /* Transición suave de 0.5 segundos */    
 }
   
 .nav-index.scrolled .logo-header {
@@ -199,3 +197,85 @@ h2{
     font-size: 26px; /* Tamaño del texto del servicio */
 }
 
+@media screen and (max-width:480px){
+    .boton-flotante{
+        font-size: 5px;
+        right: 10px;
+        padding: 5px 10px;
+    }
+    .nav-index {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        overflow-x: auto; /* Agrega desplazamiento horizontal en dispositivos pequeños */
+        height: 35px;
+    }
+    
+    .ul-index {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en dispositivos pequeños */
+    }
+    
+    .li-index {
+        margin: 20px 0;
+        color: white;
+        font-size: 18px;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        flex: 1; /* Distribuye el espacio entre los elementos */
+        text-align: center; /* Centra el texto */
+        max-width: 100%; /* Evita que los elementos sean más anchos que el contenedor */
+    }
+    
+    .li-index a {
+        text-decoration: none;
+        color: white;
+        padding: 10px; /* Ajusta el espaciado del enlace */
+        display: block; /* Convierte el enlace en un bloque para ocupar todo el ancho disponible */
+        width: 100%; /* Ancho completo del enlace */
+        box-sizing: border-box; /* Incluye el padding en el ancho total */
+    }
+    .logo-header {
+        width: 10px;
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 21px;
+        -moz-border-radius: 21px;
+        -webkit-border-radius: 21px;
+        border: 0px solid #000000;
+        transition: all 0.5s ease; /* Transición suave de 0.5 segundos */    
+    }
+    .contenido-banner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-115%,-230%);
+        text-align: center;
+        color: #ffffff;
+        margin: 0 auto;
+    }
+    .contenido-banner img{
+        width: 150px;
+    }
+    .contenido-servicios {
+        margin-top: 150px; /* Ajusta el margen superior para pantallas más pequeñas */
+        height: auto;
+    }
+    .servicio h3{
+        font-size: 25px;
+    }
+    .servicio p{
+        font-size: 20px;
+    }
+}
