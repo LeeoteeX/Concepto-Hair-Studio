@@ -14,9 +14,10 @@
 
 .contenido-banner{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-190%,-100%);
+    top: 15%;
+    left: 5%;
+    /*transform: translate(-190%,-100%);*/
+
     text-align: center;
     color: #ffffff;
     margin: 0 auto;
@@ -34,6 +35,16 @@
     -webkit-box-shadow: 10px 10px 31px 4px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 31px 4px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 31px 4px rgba(0,0,0,0.75);
+}
+
+.frase-banner{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: justify;
+    position: absolute;
+    display: flex;
+    transform: translate(270%,200px);
 }
 
 .nav-index {
@@ -159,7 +170,6 @@ h2{
     left: 0;
     right: 0;
     width: 100%;
-    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,14 +200,14 @@ h2{
 }
 
 .servicio h3 {
-    font-size: 34px; /* Tamaño del título del servicio */
+    font-size: 30px; /* Tamaño del título del servicio */
 }
 
 .servicio p {
-    font-size: 26px; /* Tamaño del texto del servicio */
+    font-size: 18px; /* Tamaño del texto del servicio */
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:600px){
     .boton-flotante{
         font-size: 15px;
         right: 10px;
@@ -268,6 +278,17 @@ h2{
     .contenido-banner img{
         width: 150px;
     }
+
+    .frase-banner{
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 40px;
+        font-weight: 800;
+        text-align: justify;
+        position: absolute;
+        display: flex;
+        transform: translate(50%,200%);
+    }
+
     .contenido-servicios {
         margin-top: 150px; /* Ajusta el margen superior para pantallas más pequeñas */
         height: auto;
