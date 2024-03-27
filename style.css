@@ -140,7 +140,11 @@ main {
     transform: translateY(-20px); /* Cambia la posición en Y para el efecto de rebote */
 }
 
+p {
+    font-size: 18px; /* Tamaño del texto del servicio */
+    font-family: "Plus Jakarta Sans", sans-serif;
 
+}
 
 h2{
     font-size: 60px;
@@ -154,6 +158,9 @@ h2{
     margin: 30px 0 30px 0;
     color: #ffffff;
 }
+h3{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
 
 #servicios {
     text-align: center;
@@ -165,7 +172,7 @@ h2{
 }
 
 .contenido-servicios {
-    margin-top: 90px;
+    /*margin-top: 90px;*/
     bottom: 30px;
     left: 0;
     right: 0;
@@ -179,8 +186,8 @@ h2{
 
 .contenido-servicios img {
     position: absolute;
-    top: 40px;
-    bottom: 40px;
+    /*top: 40px;
+    bottom: 40px;*/
     left: 0;
     width: 100%;
     height: 100%;
@@ -202,16 +209,40 @@ h2{
 .servicio h3 {
     font-size: 30px; /* Tamaño del título del servicio */
 }
+/* SECCION NOSOTROS*/
 
-.servicio p {
-    font-size: 18px; /* Tamaño del texto del servicio */
+.contenido-nosotros{
+    margin: 0 auto;
+    background-color: black;
+    text-align: center;
+    padding: 20px 0 100px;
 }
 
+.contenido-nosotros h2{
+    padding: 20px 0;
+}
+
+.contenido-nosotros p{
+    color: #ffffff;
+    
+}
+
+
 @media screen and (max-width:600px){
+    h2{
+        font-size: 44px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    p{
+        font-size: 15px;
+        padding: 0 40px;
+    }
+
     .boton-flotante{
         font-size: 15px;
         right: 10px;
         padding: 5px 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     .nav-index {
         display: flex;
@@ -224,7 +255,7 @@ h2{
         width: 100%;
         z-index: 1000;
         overflow-x: auto; /* Agrega desplazamiento horizontal en dispositivos pequeños */
-        height: 35px;
+        height: 50px;
     }
     
     .ul-index {
@@ -238,10 +269,10 @@ h2{
     .li-index {
         margin: 20px 0;
         color: white;
-        font-size: 18px;
+        font-size: 20px;
         font-family: "Plus Jakarta Sans", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 200;
+        font-weight: 400;
         font-style: normal;
         flex: 1; /* Distribuye el espacio entre los elementos */
         text-align: center; /* Centra el texto */
@@ -286,17 +317,23 @@ h2{
         text-align: justify;
         position: absolute;
         display: flex;
-        transform: translate(50%,220%);
+        transform: translate(60%,220%);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     .contenido-servicios {
-        margin-top: 150px; /* Ajusta el margen superior para pantallas más pequeñas */
         height: auto;
     }
+
+
     .servicio h3{
-        font-size: 25px;
+        font-size: 18px;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
-    .servicio p{
-        font-size: 20px;
-    }
+   .servicio p{
+    font-size: 12px;
+    padding: 0;
+    padding-top: 5px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+   }
 }
