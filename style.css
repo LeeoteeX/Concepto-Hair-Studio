@@ -38,10 +38,14 @@
 }
 
 .frase-banner{
-    font-family: "Hammersmith One", sans-serif;
-    font-size: 50px;
+    font-family: "Anton", sans-serif;
     font-weight: 800;
-    text-align: justify;
+    font-style: bold;  
+    font-size: 50px;
+    /*font-family: "Hammersmith One", sans-serif;
+    font-size: 50px;
+    font-weight: 800;*/
+    text-align: left;
     position: absolute;
     display: flex;
     transform: translate(270%,200px);
@@ -312,10 +316,9 @@ h3{
     }
 
     .frase-banner{        
-        font-family: "Hammersmith One", sans-serif;
+        font-family: "Anton", sans-serif;
         font-weight: 400;
         font-style: normal;
-          
         font-size: 40px;
         font-weight: 800;
         text-align: left;
