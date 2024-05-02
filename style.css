@@ -332,6 +332,7 @@ h3{
         font-size: 40px;
         padding: 0 0 40px; /* Ajusta el padding para dispositivos pequeños */
         width: 70%;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Espaciado superior */
     }
 
     .contenido-nosotros p{
