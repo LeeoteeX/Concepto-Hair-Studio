@@ -29,7 +29,7 @@
     width: 350px;
     height: auto;
     margin-bottom: 10px;
-    padding-top: 10%;
+    margin-top: 15%;
     border-radius: 21px;
     -moz-border-radius: 21px;
     -webkit-border-radius: 21px;
@@ -212,6 +212,13 @@ h3{
 .servicio h3 {
     font-size: 30px; /* Tamaño del título del servicio */
 }
+
+/* SECCION TURNOS*/
+#turnos h2{
+    text-align: center;
+}
+
+
 /* SECCION NOSOTROS*/
 
 .contenido-nosotros{
@@ -292,6 +299,7 @@ h3{
         width: 100%; /* Ancho completo del enlace */
         box-sizing: border-box; /* Incluye el padding en el ancho total */
     }
+
     .logo-header {
         width: 10px;
         height: auto;
@@ -302,25 +310,29 @@ h3{
         border: 0px solid #000000;
         transition: all 0.5s ease; /* Transición suave de 0.5 segundos */    
     }
+
     .contenido-banner {
         padding: 0 10px; /* Ajusta el padding según sea necesario */
     }
+
     .contenido-banner img{
         width: 200px;
-        padding-top: 20%;
+        margin-top: 20%;
     }
 
     .frase-banner {
         font-size: 40px;
-        padding: 10px; /* Ajusta el padding para dispositivos pequeños */
+        padding: 0 0 40px; /* Ajusta el padding para dispositivos pequeños */
+        width: 70%;
     }
+
     .contenido-nosotros p{
         padding: 0 10%;
     }
+
     .contenido-servicios {
         height: auto;
     }
-
 
     .servicio h3{
         font-size: 18px;
