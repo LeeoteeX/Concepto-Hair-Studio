@@ -12,44 +12,45 @@
     overflow: hidden;
 }
 
-.contenido-banner{
+.contenido-banner {
     position: absolute;
-    top: 15%;
-    left: 5%;
-    /*transform: translate(-190%,-100%);*/
-
-    text-align: center;
-    color: #ffffff;
-    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el espacio verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    padding: 20px; /* Ajusta el padding según sea necesario */
 }
 
-.contenido-banner img{
+.contenido-banner img {
     width: 350px;
     height: auto;
     margin-bottom: 10px;
-    border-radius: 21px 21px 21px 21px;
-    -moz-border-radius: 21px 21px 21px 21px;
-    -webkit-border-radius: 21px 21px 21px 21px;
+    padding-top: 10%;
+    border-radius: 21px;
+    -moz-border-radius: 21px;
+    -webkit-border-radius: 21px;
     border: 0px solid #000000;
-    /*Sonbra del logo*/
     -webkit-box-shadow: 10px 10px 31px 4px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 31px 4px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 31px 4px rgba(0,0,0,0.75);
 }
 
-.frase-banner{
+.frase-banner {
     font-family: "Anton", sans-serif;
+    font-size: 50px;
     font-weight: 800;
-    font-style: bold;  
-    font-size: 50px;
-    /*font-family: "Hammersmith One", sans-serif;
-    font-size: 50px;
-    font-weight: 800;*/
-    text-align: left;
-    position: absolute;
-    display: flex;
-    transform: translate(270%,200px);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: right; /* Alinea el texto a la derecha */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Espaciado superior */
+    margin-bottom: 20px; /* Espaciado inferior */
+    align-self: flex-end; /* Alinea la frase al final del contenedor */
+    color: #ffffff;
+    width: 40%;
+    padding-right: 20px;
+    padding-bottom: 30px;
 }
 
 .nav-index {
@@ -94,10 +95,7 @@
     height: auto;
     margin-bottom: 10px;
     border-radius: 21px;
-    -moz-border-radius: 21px;
-    -webkit-border-radius: 21px;
-    border: 0px solid #000000;
-    transition: all 0.5s ease; /* Transición suave de 0.5 segundos */    
+    transition: all 0.5s ease; /* Transición suave de 0.5 segundos */
 }
   
 .nav-index.scrolled .logo-header {
@@ -229,6 +227,7 @@ h3{
 
 .contenido-nosotros p{
     color: #ffffff;
+    padding: 0 15px;
     
 }
 
@@ -238,6 +237,7 @@ h3{
         font-size: 44px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
+
     p{
         font-size: 15px;
         padding: 0 40px;
@@ -302,32 +302,21 @@ h3{
         border: 0px solid #000000;
         transition: all 0.5s ease; /* Transición suave de 0.5 segundos */    
     }
-    .contenido-banner{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-115%,-230%);
-        text-align: center;
-        color: #ffffff;
-        margin: 0 auto;
+    .contenido-banner {
+        padding: 0 10px; /* Ajusta el padding según sea necesario */
     }
     .contenido-banner img{
-        width: 150px;
+        width: 200px;
+        padding-top: 20%;
     }
 
-    .frase-banner{        
-        font-family: "Anton", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+    .frase-banner {
         font-size: 40px;
-        font-weight: 800;
-        text-align: left;
-        position: absolute;
-        display: flex;
-        transform: translate(60%,220%);
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        padding: 10px; /* Ajusta el padding para dispositivos pequeños */
     }
-
+    .contenido-nosotros p{
+        padding: 0 10%;
+    }
     .contenido-servicios {
         height: auto;
     }
@@ -337,6 +326,7 @@ h3{
         font-size: 18px;
         text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
+
    .servicio p{
     font-size: 12px;
     padding: 0;
